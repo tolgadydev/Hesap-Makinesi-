@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.calculator {
+    background-color: #7a667f;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.display {
+    grid-column: span 4;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 20px;
+    border: none;
+    background: #dcdcdc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.num {
+    background-color: #A9A9C9;
+    color: black;
+}
+
+.operator {
+    background-color: #C99A3A;
+    color: black;
+}
+
+.zero {
+    grid-column: span 4; /* 0 butonu tam genişlikte */
+}
